@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --env=jsdom --verbose"
+    "test": "jest --watch"
   },
   "dependencies": {
     "next": "12.3.2",
@@ -22,14 +22,5 @@
     "jest": "^29.5.0",
     "jest-css-modules": "^2.1.0",
     "jest-environment-jsdom": "^29.5.0"
-  },
-  "jest": {
-    "testPathIgnorePatterns": [
-      "<rootDir>/.next/",
-      "<rootDir>/node_modules/"
-    ],
-    "moduleNameMapper": {
-      "\\.(css)$": "<rootDir>/node_modules/jest-css-modules"
-    }
   }
 }
